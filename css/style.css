@@ -60,6 +60,9 @@ body {
   position: relative;
   z-index: 1;
 }
+.sp-br {
+  display: none;
+}
 .main-text::after {
   position: absolute;
   content: "";
@@ -155,17 +158,45 @@ body {
     width: 100%;
   }
   .content-ttl {
-    padding: 16px 0;
+    padding: 16px 20px;
   }
 }
 
 @media (max-width:620px){
   .header > h1 {
     font-size: 22px;
-    padding-left: 26px;
-    background: url(../img/smile-icon.svg) no-repeat 0 0/contain;
+    padding-left: 46px;
+    background: none;
+  }
+  .header {
+    position: relative;
+  }
+  .header::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: url(../img/smile-icon-2.svg) no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    margin: auto;
+    z-index: -1;
+  }
+  .sp {
+    display: block;
   }
   .main-text {
     font-size: 16px;
+    padding: 80px 30px;
+  }
+  .sp-br {
+    display: block;
+  }
+  .content-ttl {
+    font-size: 20px;
+    line-height: 1.5;
   }
 }
