@@ -50,6 +50,9 @@ body {
   font-family: 'BIZ UDPGothic', sans-serif;
   color: #ff6600;
 }
+.sp {
+  display: none;
+}
 .main-text {
   text-align: center;
   line-height: 2;
@@ -165,7 +168,7 @@ body {
 @media (max-width:620px){
   .header > h1 {
     font-size: 22px;
-    padding-left: 46px;
+    padding-left: 0;
     background: none;
   }
   .header {
