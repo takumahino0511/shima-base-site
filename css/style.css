@@ -50,6 +50,9 @@ body {
   font-family: 'BIZ UDPGothic', sans-serif;
   color: #ff6600;
 }
+.sp {
+  display: none;
+}
 .main-text {
   text-align: center;
   line-height: 2;
